@@ -1,7 +1,7 @@
 Awesome backbones for image classification
 ===========================
 
-<div align="center">
+
 ![](https://img.shields.io/badge/Awesome%20Backbones-v0.6.2-brightgreen)
 ![](https://img.shields.io/badge/PyTorch-%3E%3Dv1.7.1-green)
 ![](https://img.shields.io/badge/Python-%3E%3Dv3.6-yellowgreen)
