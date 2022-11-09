@@ -3,12 +3,12 @@ from shutil import copy, rmtree
 import random
 from tqdm import tqdm
 
+
 def main():
     '''
     split_rate  : 测试集划分比例
     init_dataset: 未划分前的数据集路径
     new_dataset : 划分后的数据集路径
-    
     '''
     def makedir(path):
         if os.path.exists(path):
@@ -32,7 +32,6 @@ def main():
         makedir(os.path.join(training_set, cla))
         makedir(os.path.join(test_set, cla))
 
-    
     for cla in classes_name:
         class_path = os.path.join(init_dataset, cla)
         img_set = os.listdir(class_path)
@@ -50,6 +49,7 @@ def main():
                     copy(init_img, new_img)
                 pbar.update(1)
         print()
+
 
 if __name__ == '__main__':
     main()
